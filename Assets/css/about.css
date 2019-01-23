@@ -1,0 +1,22 @@
+#about {
+	padding: 25px 80px;
+}
+#about h1, #about h4 {
+	margin: 0;
+}
+#about h1 {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 96px;
+	font-weight: bold;
+}
+
+#logos {
+	margin-bottom: 16px;
+}
+
+.mt-0 {
+	margin-top: 0;
+}
+.mb-0 {
+	margin-bottom: 0;
+}

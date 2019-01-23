@@ -1,0 +1,53 @@
+html, body {
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+}
+
+.mdl-layout .mdl-layout__header {
+	background-color: white;
+}
+.mdl-navigation .mdl-navigation__link {
+	font-family: "Century Gothic", sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+#footer-ish {
+	margin-bottom: 8px;
+}
+
+#footer-ish p {
+	text-align: center;
+	margin: 0;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+	padding: 5px 0;
+	font-size: 1em;
+
+	list-style: none;
+}
+.social > li {
+	margin: 0 10px;
+}
+.social i {
+	color: black;
+	transition: color 0.3s, font-size 0.3s;
+}
+.social i:hover {
+	font-size: 2em;
+}
+.social i.fa-facebook-f:hover {
+	color: #3d5b99;
+}
+.social i.fa-github:hover {
+	color: #6e5494;
+}
+.social i.fa-linkedin:hover {
+	color: #4875B4;
+}

@@ -1,0 +1,49 @@
+#cover {
+	background-image: url('../images/Cover.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px -100px;
+	background-attachment: fixed;
+
+	margin-bottom: 50px;	/* make up for negative positioning of profile picture */
+}
+
+#profile_image {
+	max-width: 250px;
+	height: auto;
+	margin: 0 auto;
+
+	position: relative;
+	bottom: -50px;
+
+	padding: 5px;
+	background-color: gray;
+	border: 5px solid white;
+}
+#profile_image img {
+	width: 100%;
+}
+
+#welcome {
+	max-width: 60%;
+	margin: 0 auto;
+}
+#welcome h1, #welcome h4 {
+	margin: 0;
+}
+#welcome h1 {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 96px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+#footer-ish {
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	right: 0;
+	margin: 0;
+}
