@@ -1,0 +1,11 @@
+#contact_me {
+	margin: 50px;
+}
+
+#footer-ish {
+	position: absolute;
+	bottom: 16px;
+	left: 0;
+	right: 0;
+	margin: 0;
+}
