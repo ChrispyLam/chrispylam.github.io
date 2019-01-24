@@ -1,20 +1,62 @@
 #cover {
-	background-image: url('../images/Cover.jpg');
+/*	background-image: url('../images/Cover.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 0px -100px;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 
 	margin-bottom: 50px;	/* make up for negative positioning of profile picture */
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+}
+#cover.theater {
+	position: static;
+	overflow: visible;
+	height: 100%;
+	margin-bottom: 225px;	/* Push profile picture past its negative margin */
+}
+
+#cover_video {
+	width: 100%;
+	position: absolute;
+	bottom: -50px;
+
+	cursor: pointer;
+	/*z-index: 1;*/
+	transition: all 0.5s ease;
+}
+#cover:hover::before {
+	content: '';
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	pointer-events: none;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.theater #cover_video {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;	/* centering */
+	width: auto;
+	height: 75%;
+	z-index: 100;
 }
 
 #profile_image {
 	max-width: 250px;
 	height: auto;
-	margin: 0 auto;
-
+	margin: -200px auto 0 auto;
 	position: relative;
-	bottom: -50px;
+	z-index: 2;
 
 	padding: 5px;
 	background-color: gray;
@@ -22,6 +64,7 @@
 }
 #profile_image img {
 	width: 100%;
+	/*z-index: 2;*/
 }
 
 #welcome {
@@ -36,14 +79,4 @@
 	font-size: 96px;
 	font-weight: bold;
 	text-align: center;
-}
-
-
-
-#footer-ish {
-	position: absolute;
-	bottom: 16px;
-	left: 0;
-	right: 0;
-	margin: 0;
 }
