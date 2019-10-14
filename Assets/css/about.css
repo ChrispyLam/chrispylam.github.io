@@ -11,7 +11,9 @@
 }
 
 #logos {
-	margin-bottom: 16px;
+	margin-bottom: 32px;
+	display: flex;
+	justify-content: space-around;
 }
 #logos img {
 	margin-right: 16px;
