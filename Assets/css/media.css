@@ -1,0 +1,68 @@
+#media {
+	padding: 25px 80px;
+}
+#media h1, #media h4 {
+	margin: 0;
+}
+#media h1 {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 96px;
+	font-weight: bold;
+}
+
+#intro {
+	text-align: center;
+}
+
+/*.collage {
+
+	display: grid;
+	width: 100%;
+	justify-content: center;
+	grid-template-rows: repeat(8, 1fr);
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 15px;
+}*/
+
+figure {
+	margin: 0;
+}
+
+/*.collage .beach1 {
+	grid-area: 1 / 1 / 4 / 5;
+}
+
+.collage .beach2 {
+	grid-area: 1 / 5 / 3 / 9;
+}
+
+.collage .beach3 {
+	grid-area: 3 / 5 / 5 / 9;
+}
+
+.collage .beach4 {
+	grid-area: 5 / 1 / 7 / 4;
+}*/
+
+.video {
+	margin-top: 48px;
+	text-align: center;
+}
+.video video {
+	width: auto;
+	height: auto;
+	max-height: 80vh;
+}
+
+.collage {
+	text-align: center;
+
+	margin-top: 48px;
+}
+.collage img {
+	width: auto;
+	/*height: 100%;*/
+	height: auto;
+	max-height: 500px;
+	object-fit: cover;
+}
